@@ -1,7 +1,7 @@
 body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background: #f0f0f0;
+        background: white;
 }
 
 h1 {
@@ -20,5 +20,19 @@ h1 {
 .buttons {
     display:flex;
     flex-direction: column;
+    margin-top: 90px;
+    margin-right: 90px;
     gap: 20px;
+}
+
+#clickArea{
+    height: 250px;
+    width: 250px;
+    background: red
+
+}
+
+.stats{
+    margin-top: 50px;
+    margin-left:90px;
 }
