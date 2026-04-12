@@ -8,42 +8,64 @@ h1 {
     margin-top: 50px;
 }
 
-
-.board {
-    display: flex;
-    justify-content: center;
-    align-item: center;
-    gap: 30px;
-    margin-top: 40px;
+.layout {
+    display:grid;
+    grid-template-columns: 1fr 350px 1fr;
+    height: calc(100vh - 100px);
+    align-items: center;
 }
 
+
+.leftColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .leftInterface{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    width: 180px;
+
 }
 
 .buttons {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 120px;
-
-    -margin-right: 90px;
     gap: 20px;
+
+
 }
 
-#clickArea{
-    height: 250px;
-    width: 250px;
-    background: red
-
+.buttons button {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
 }
 
 .stats{
 
     display: none;
-    text-align: left;
+    background:grey;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
 }
+
+.centerArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clickArea{
+    height: 350px;
+    width: 350px;
+    background: red;
+    border-radius: 10px;
+
+}
+
+
 
