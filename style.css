@@ -26,6 +26,7 @@ h1 {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 30px;
     width: 180px;
 
@@ -33,9 +34,11 @@ h1 {
 
 .buttons {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 20px;
     position: relative;
+    margin-top: -150px;
 
 
 }
@@ -51,13 +54,15 @@ h1 {
     position: absolute;
     top: 100%;
     margin-top: 20px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-    aadisplay: none;
+    display: none;
     background:grey;
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
+    width: 300px;
+    box-sizing: border-box;
 }
 
 .centerArea{
