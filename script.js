@@ -63,9 +63,6 @@ function endGame() {
     stopButton.disabled = true;
     clearTimeout(timeout);
 
-    // if (times.length > 0) {
-    //     showStats();
-    // }
 }
 
 
@@ -74,10 +71,10 @@ function showStats() {
     const min = Math.min(...times);
     const avg = times.reduce((a, b) => a + b, 0) / times.length;
     const p = stats.querySelectorAll("p");
-    let theBestScore= Number(localStorage.getItem("bestScore"));
+    let theBestScore = Number(localStorage.getItem("bestScore"));
 
 
-    if (!theBestScore||min<theBestScore) {
+    if (!theBestScore || min < theBestScore) {
         localStorage.setItem("bestScore", min.toString());
         theBestScore = min;
     }

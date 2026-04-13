@@ -1,7 +1,7 @@
 body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: white;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 }
 
 .layout {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 350px 1fr;
     height: calc(100vh - 100px);
     align-items: center;
@@ -22,7 +22,7 @@ h1 {
     align-items: center;
 }
 
-.leftInterface{
+.leftInterface {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ h1 {
     font-size: 20px;
 }
 
-.stats{
+.stats {
 
     position: absolute;
     top: 100%;
@@ -58,20 +58,20 @@ h1 {
     transform: translateX(-50%);
 
     display: none;
-    background:grey;
+    background: grey;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
     box-sizing: border-box;
 }
 
-.centerArea{
+.centerArea {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#clickArea{
+#clickArea {
     height: 350px;
     width: 350px;
     background: red;
